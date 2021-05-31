@@ -24,7 +24,7 @@ before_deploy:
   - cp build/libs/*.jar before-deploy/
   - cd before-deploy && zip -r before-deploy * # befor-deploy로 이동후 전체 압축
   - cd ../ && mkdir -p deploy
-  - mv before-deploy/hello-spring.zip deploy/hello-spring.zip
+  - mv before-deploy/before-deploy.zip deploy/hello-spring.zip
 
 deploy:
   - provider: s3
