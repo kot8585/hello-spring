@@ -3,6 +3,7 @@ package hello.hellospring.domain;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "MEMBER")
 public class Member {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
